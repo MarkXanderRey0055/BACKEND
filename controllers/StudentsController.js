@@ -9,9 +9,10 @@ export const fetchStudents = async (req, res,) => {
                 res.status(500).json({
                     sucess: false,
                     message: "Internal Server Error"
-                })
+                });
             }
 }
+
 
 export const createStudent = async (req, res) => {
     const {srcode, name, course} = req.body
